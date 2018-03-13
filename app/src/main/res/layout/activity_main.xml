@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibrahim_pc.texrecog.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="#c3d2fff8"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="510dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_pike"
+                android:layout_alignParentTop="true"
+
+                />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:text="Choose Image to Read"
+                android:textColor="#49015b"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingTop="88dp"
+                />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    >
+
+    <Button
+        android:id="@+id/btn_pike"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Image" />
+
+
+    <Button
+        android:id="@+id/Speak_id"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTextToSpeech"
+        android:text="Speak" />
+
+    <Button
+        android:id="@+id/Stop_id"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTextToSpeech"
+        android:text="Stop" />
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
